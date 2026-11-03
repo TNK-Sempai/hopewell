@@ -1,0 +1,81 @@
+:root {
+  /* Nos couleurs de marque */
+  --brand-500: #2563eb;
+  --brand-600: #1a4cb6;
+  --brand-700: #0b2866;
+  --brand-gradient: linear-gradient(135deg, var(--brand-500), var(--brand-700));
+  --brand-shadow: 0 10px 24px rgb(0, 19, 61);
+  --font-title: "Poppins", system-ui, sans-serif;
+
+  /* Les variables de Bootstrap, redéfinies */
+  --bs-body-font-family: "Nunito Sans", system-ui, sans-serif;
+  --bs-body-bg: #f7f8fa;
+  --bs-body-color: #4b5563;
+  --bs-heading-color: #0f172a;
+  --bs-success-rgb: 0, 19, 61;
+  --bs-success-bg-subtle: #dcfce7;
+  --bs-success-text-emphasis: #1a4cb6;
+}
+
+h1, h2, h3, h4, h5, h6, .font-title {
+  font-family: var(--font-title);
+}
+
+/* Marque */
+
+.btn-gradient {
+  background: var(--brand-gradient);
+  color: #fff;
+  border: 0;
+  box-shadow: var(--brand-shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-gradient:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(22, 163, 74, 0.4);
+}
+
+.icon-box {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 1rem;
+  color: #fff;
+  background: var(--brand-gradient);
+  box-shadow: var(--brand-shadow);
+}
+
+.icon-box-sm {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+}
+
+/* Navbar */
+
+.navbar {
+  --bs-navbar-color: #0f172a;
+  --bs-navbar-hover-color: var(--brand-600);
+  --bs-navbar-active-color: var(--brand-600);
+}
+
+.tracking-wide {
+  letter-spacing: 0.08em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.02em;
+}
+
+/* Cards */
+.card-hover {
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08) !important;
+}
